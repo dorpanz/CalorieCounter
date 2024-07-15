@@ -144,7 +144,7 @@ function Activities() {
                     </div>
                 </div>
 
-                <div className='steps'>
+                <div className='steps excersie-add'>
                     <div className='title-excer'>
                         <span>Exercise</span>
                         <button className='add-execr' onClick={handleOpenModal}>+</button>

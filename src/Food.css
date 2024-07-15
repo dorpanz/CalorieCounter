@@ -113,15 +113,51 @@
     .btn{
         width: 40px;
         height: 40px;
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 501px) and (max-width: 738px) {
+    .summary{
+        width: 450px;
+    }
+    .breakfast{
+        width: 400px;
+        margin: 10px;
+        padding: 20;
+    }
+}
+@media (min-width: 738px) and (max-width: 1023px) {
     .summary{
         width: 600px;
     }
-    .cal-remain-breakf img{
-        width: 80px;
+    .date{
+        font-size: 14px;
+    }
+    .all-info p{
+        font-size: 15px;
+    }
+    .progress-circle-breakfast{
+        width: 90px;
+        height: 90px;
+    }
+    .progress-circle-breakfast::after{
+        width: 70px;
+        height: 70px;
+    }
+    .title{
+        font-size: 12px;
+    }
+
+    .breakfast{
+        width: 500px;
+        margin: 10px;
+        padding: 20;
+    }
+    
+    .btn{
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
     }
 }

@@ -240,3 +240,39 @@
     align-items: center;
     height: 30px;
 }
+
+@media all and (max-width:500px) {
+    .activity-item{
+        width: 40%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .steps{
+        width: 400px;
+        margin-bottom: 10px;
+    }
+
+    .progress-steps{
+        max-width: 400px;
+    }
+
+    .modal-content input{
+        width: 100%;
+    }
+
+    .modal button {
+        width: 100%;
+    }
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        margin: 20% ; /* Center modal vertically */
+        padding: 20px;
+        background-color: #fefefe;
+        border: 1px solid #888;
+        border-radius: 20px;
+    }
+
+}

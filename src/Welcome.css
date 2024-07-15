@@ -126,7 +126,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media all and (max-width:500px) {
     .summary.welcome{
         width: 300px;
     }
@@ -137,7 +137,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 500px) and (max-width: 1023px) {
     .summary.welcome{
         width: 600px;
     }

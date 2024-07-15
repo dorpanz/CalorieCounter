@@ -170,10 +170,7 @@ nav {
 
 
 
-@media (max-width: 812px) {
-  .summary{
-      width: 350px;
-  }
+@media all and (max-width:800px)  {
   .date{
     font-size: 14px;
   }
@@ -196,10 +193,9 @@ nav {
   }
 
 }
-
-
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 501px) and (max-width: 738px) {
   .summary{
-      width: 600px;
+    width: 100%;
   }
 }
+

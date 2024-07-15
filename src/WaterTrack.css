@@ -43,7 +43,7 @@
 .waters{
     display: flex;
     padding: 20px;
-    justify-content: center;
+    justify-content: center;flex-wrap: wrap;
 }
 
 .instruction{

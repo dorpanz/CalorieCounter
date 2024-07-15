@@ -15,7 +15,6 @@ nav {
   justify-content: space-between; 
   align-items: center; 
   border-radius: 30px;
-  width: 100%;
 }
 
 
@@ -172,10 +171,6 @@ nav {
 
 
 @media all and (max-width:500px)  {
-  .summary{
-    border: #fff 1px solid;
-    width: 400px;
-  }
   .date{
     font-size: 14px;
   }

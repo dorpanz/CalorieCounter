@@ -170,7 +170,7 @@ nav {
 
 
 
-@media all and (max-width:800px)  {
+@media all and (max-width:500px)  {
   .date{
     font-size: 14px;
   }

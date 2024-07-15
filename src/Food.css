@@ -83,6 +83,9 @@
 
 
 @media all and (max-width:500px) {
+    body{
+        overflow-x: hidden;
+    }
     .summary{
         width: 300px;
     }

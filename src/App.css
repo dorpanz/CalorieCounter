@@ -172,6 +172,9 @@ nav {
 
 
 @media all and (max-width:500px)  {
+  .summary{
+    width: 100%;
+  }
   .date{
     font-size: 14px;
   }

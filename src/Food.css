@@ -32,7 +32,6 @@
     width: 600px;
     margin: auto;
     padding: 20px;
-    border-radius: 30px;
 }
 
 .line{
@@ -83,41 +82,46 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
     .summary{
-        width: 370px;
+        width: 300px;
     }
     .date{
-      font-size: 14px;
+        font-size: 14px;
     }
     .all-info p{
-      font-size: 15px;
+        font-size: 15px;
     }
-    .progress-circle{
-      width: 60px;
-      height: 120px;
+    .progress-circle-breakfast{
+        width: 70px;
+        height: 70px;
     }
-    .progress-circle::after{
-      width: 100px;
-      height: 100px;
-    }
-    .nutrition p{
-      font-size: 14px;
-    }
-    .progress-bar{
-      width: 100%;
-    }
-    .cal-remain-breakf img{
+    .progress-circle-breakfast::after{
         width: 60px;
+        height: 60px;
     }
-  }
-  
-  
-  @media (min-width: 768px) and (max-width: 1023px) {
+    .title{
+        font-size: 12px;
+    }
+
+    .breakfast{
+        width: 300px;
+        margin: 10px;
+        padding: 0;
+    }
+    
+    .btn{
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
     .summary{
         width: 600px;
     }
     .cal-remain-breakf img{
         width: 80px;
     }
-  }
+}

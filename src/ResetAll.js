@@ -30,9 +30,6 @@ const ResetAll = () => {
 
             // Clear water data
             localStorage.removeItem('animationStates');
-
-            // Refresh the page
-            window.location.reload();
         }
     };
 

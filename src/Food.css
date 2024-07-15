@@ -82,7 +82,7 @@
 }
 
 
-@media (max-width: 700px) {
+@media all and (max-width:500px) {
     .summary{
         width: 300px;
     }

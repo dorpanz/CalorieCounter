@@ -17,6 +17,7 @@ function Activities() {
         return savedExercises ? JSON.parse(savedExercises) : [];
     });
     const [showModal, setShowModal] = useState(false);
+    // eslint-disable-next-line no-unused-vars
     const [totalTime, setTotalTime] = useState(() => {
         const savedTotalTime = localStorage.getItem('totalTime');
         return savedTotalTime ? JSON.parse(savedTotalTime) : 0;

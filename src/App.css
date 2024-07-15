@@ -1,5 +1,6 @@
 body {
   background-color: rgb(255, 195, 204);
+  overflow-x: hidden;
 }
 
 * {
@@ -15,6 +16,7 @@ nav {
   justify-content: space-between; 
   align-items: center; 
   border-radius: 30px;
+  width: 100%;
 }
 
 

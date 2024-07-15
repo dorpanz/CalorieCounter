@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import './Recipe.css'; // Assume you have a CSS file for styling
-import { ClipLoader } from 'react-spinners'; // Import the spinner
+import './Recipe.css'; 
+import { ClipLoader } from 'react-spinners'; 
 
 const MY_ID = "a2efd5d7";
 const MY_TOKEN = "21d5c8b3e5e37144089649a12a721140";
@@ -115,7 +115,7 @@ const Recipe = () => {
                     <ClipLoader size={50} color={"#123abc"} loading={loading} />
                 </div>
             ) : (
-                <>
+                <div>
                     {selectedCategory === 'all' && !searchQuery && (
                         <div className="recommendations">
                             <h2>Recommendations</h2>
@@ -177,10 +177,8 @@ const Recipe = () => {
                             </div>
                         ))}
                     </div>
-                </>
+                </div>
             )}
-
-            {/* Modal */}
             {modalRecipe && (
                 <div className="modal">
                     <div className="modal-content">

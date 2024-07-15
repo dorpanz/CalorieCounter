@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import { useNavigate } from 'react-router';
 import { NutritionContext } from '../NutritionContext';
 import './Breakfast.css';
 import NutritionTable from './NutritionTable';
@@ -17,7 +18,7 @@ const Breakfast = () => {
         visibleItems,
         setVisibleItems,
     } = useContext(NutritionContext);
-
+    const navigate = useNavigate();
     const [showSearchForm, setShowSearchForm] = useState(false);
     const [isAdding, setIsAdding] = useState(false);
 
@@ -66,7 +67,12 @@ const Breakfast = () => {
 
     return (
         <div className="meal summary">
-            <p className='title-food'>Breakfast</p>
+            <div className='head-food'>
+                <button onClick={() => navigate(-1)} className="go-back-button">Go Back</button>
+                <p className='title-food'>Breakfast</p>
+            
+            </div>
+            
             <div className="added-foods">
                 <h3>Added Foods:</h3>
                 {mealTimes.breakfast.length === 0 ? (

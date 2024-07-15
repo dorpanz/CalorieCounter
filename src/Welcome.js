@@ -77,7 +77,7 @@ const Welcome = () => {
     };
 
     return (
-        <div className="summary">
+        <div className="summary welcome">
             <h3 className="title-cal">Welcome to Calorie Counter App</h3>
             <p>Your journey to a healthier lifestyle begins here. Our app helps you keep track of your daily caloric intake and ensures you stay on top of your dietary goals.</p>
             <p>Get started by answering the question to calculate your ideal calorie intake</p>

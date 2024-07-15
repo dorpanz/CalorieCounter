@@ -167,3 +167,39 @@ nav {
     opacity: 1;
   }
 }
+
+
+
+@media (max-width: 767px) {
+  .summary{
+      width: 370px;
+  }
+  .date{
+    font-size: 14px;
+  }
+  .all-info p{
+    font-size: 15px;
+  }
+  .progress-circle{
+    width: 60px;
+    height: 120px;
+  }
+  .progress-circle::after{
+    width: 100px;
+    height: 100px;
+  }
+  .nutrition p{
+    font-size: 14px;
+  }
+  .progress-bar{
+    width: 100%;
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .summary{
+      width: 600px;
+  }
+}

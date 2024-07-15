@@ -14,6 +14,9 @@
     text-align: center;
     font-weight: 600;
     color: rgb(26, 12, 14);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }   
 
 .search-cont{
@@ -179,4 +182,66 @@ li{
 
 .delete-food-button:hover{
     background-color: rgb(255, 112, 136);
+}
+
+.head-food {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.go-back-button {
+    background-color: rgb(250, 184, 195);
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    margin-right: auto; 
+}
+
+
+@media (max-width: 767px) {
+    .summary.meal{
+        width: 300px;
+    }
+    .find-food {
+        width: 100%;
+    }
+
+    .title-food {
+        font-size: 20px;
+    }
+
+    .search-cont {
+        flex-direction: column;
+    }
+    .search-input{
+        width: 96%;
+        margin-bottom: 10px;
+    }
+    .search-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .summary.meal{
+        width: 400px;
+    }
+    .find-food {
+        width: 80%;
+    }
+
+    .title-food {
+        font-size: 22px;
+    }
+
+    .search-input,
+    .search-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
 }

@@ -1,0 +1,182 @@
+.summary.meal{
+    margin-top: 20px;
+    border:none;
+}
+
+.find-food{
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    margin: auto;
+}
+.title-food{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(26, 12, 14);
+}   
+
+.search-cont{
+    display: flex;
+}
+.search-input{
+    width: 70%;
+    padding: 5px;
+    border: 1px solid rgb(255, 101, 127);
+    background-color: rgb(255, 255, 255);
+}
+
+.search-button{
+    border: none;
+    background-color: rgb(255, 116, 139);
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+    width: 30%;
+    height: 30px;
+}
+
+.search-button:hover{
+    background-color: rgb(251, 86, 114);
+}
+
+.food-results-listing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.food-results{
+    margin-top: 20px;
+}
+
+.food-item{
+    padding: 20px;
+}
+.nutrition-table{
+    width: 300px;
+    background-color: pink;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.food-text{
+    margin-left: 10px;
+}
+.nutrition-table-table{
+    width: 300px;
+}
+.serving-gram{
+    font-size: 12px;
+    color:rgb(40, 40, 40);
+}
+.food-title{
+    width: 200px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.food-label{
+    display: flex;
+    justify-content: space-between;
+    background-color: pink;
+    padding: 3px;
+    border-radius: 20px;
+}
+.add-food-button{
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 234, 237);
+    cursor: pointer;
+}
+.add-food-button:hover{
+    background-color: rgb(255, 112, 136);
+    color: white;
+}
+
+.close-button{
+    border: none;
+    background-color: rgb(255, 129, 150);
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+}
+.show-more-button{
+    padding: 5px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid rgb(49, 16, 16);
+    background-color: rgb(255, 148, 166);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.show-more-button:hover{
+    background-color: rgb(255, 112, 136);
+}
+.show-more-container {
+    display: flex;
+    justify-content: center;
+}
+
+.quantity-input{
+    width: 45px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+.added-foods{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    width: 300px;
+    background-color: rgb(254, 243, 245);
+    border-radius: 20px;
+}
+li{
+    padding: 10px;
+}
+.add-more-container{
+    display: flex;
+    justify-content: center;
+}
+.add-more-button{
+    padding: 5px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid rgb(49, 16, 16);
+    background-color: rgb(255, 148, 166);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.added-food-item{
+    display: flex;
+}
+
+.delete-food-button{
+    border: none;
+    background-color: rgb(255, 148, 166);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left:auto;
+    margin-right: 30px;
+}
+.clear-all-button{
+    border: none;
+    background-color: rgb(250, 184, 195);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+}
+.clear-all-button:hover{
+    background-color: rgb(255, 109, 134);
+}
+
+.delete-food-button:hover{
+    background-color: rgb(255, 112, 136);
+}

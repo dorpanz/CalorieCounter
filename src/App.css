@@ -1,0 +1,169 @@
+body {
+  background-color: rgb(255, 195, 204);
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+nav {
+  background-color: rgb(251, 140, 158);
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  border-radius: 30px;
+}
+
+
+.menu {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.menu:hover {
+  background-color: pink;
+  color: black;
+}
+
+.headline{
+  padding: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  margin: auto;
+  border-radius: 30px;
+}
+.reset-all-button{
+  height: 24px;
+  border-radius: 20px;
+  width: 100px;
+  background-color: rgb(252, 85, 113);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.reset-all-button:hover{
+  background-color: rgb(253, 55, 88);
+}
+.summary {
+  background-color: rgb(255, 228, 232);
+  padding: 50px;
+  width: 850px;
+  margin: auto;
+  border-radius: 30px;
+}
+.summary.main-info{
+  margin-top: 20px;
+}
+.date {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.all-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nutrition-summary {
+  display: flex;
+  justify-content: center;
+}
+
+.calories {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.text-calorie {
+  color: rgb(76, 76, 76);
+}
+
+.nutrition {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+.progress-circle {
+  position: relative;
+  width: 90px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-circle::after {
+  position: absolute;
+  content: '';
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: rgb(255, 228, 232);
+}
+
+.cal-remain {
+  font-size: 18px;
+  z-index: 1;
+}
+
+.progress-bar {
+  background-color: pink;
+  height: 5px;
+  width: 90px;
+  border-radius: 20px;
+}
+
+.progress-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  background-color: rgb(255, 118, 140);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.progress-per.carbs {
+  width: 80%;
+  animation-delay: 0.1s;
+}
+
+.progress-per.protein {
+  width: 40%;
+  animation-delay: 0.1s;
+}
+
+.progress-per.fat {
+  width: 10%;
+  animation-delay: 0.1s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

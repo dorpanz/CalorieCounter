@@ -1,0 +1,242 @@
+.activity{
+    margin-top: 20px;
+    border:none;
+    width: 1000px;
+    background-color: none;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.steps{
+    background-color: rgb(255, 157, 171);
+    width: 300px;
+    height: 220px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+.steps-input{
+    font-size: 18px;
+    width: 120px;
+    background-color: rgb(254, 226, 231);
+    border: none ;
+    border-radius: 10px;
+}
+
+.steps-input-cont{
+    display: flex;
+    height: 65px;
+}
+.progress-per-steps {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgb(255, 88, 116);
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.1s;
+}
+
+.activity-item{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.progress-steps {
+    margin-top: 20px;
+    background-color: rgb(249, 202, 202);
+    height: 8px;
+    width: 230px;
+    border-radius: 20px;
+}
+
+
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.steps-amount{
+    display: flex;
+    font-size: 20px;
+}
+
+.title-steps{
+    font-weight:600;
+    font-size: 18px;
+}
+
+.goal-steps{
+    font-size: 14px;
+}
+
+.burned-amount{
+    display: flex;
+    font-size: 16px;
+}
+
+.title-excer{
+    font-weight:600;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.add-execr{
+    border: none;
+    background-color: rgb(255, 116, 139);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.add-execr.edit{
+    width: 50px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.add-execr.save{
+    width: 60px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.activity-list {
+    width: 300px;
+    height: 220px;
+    background-color: rgb(255, 157, 171);
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.exercise-list-container {
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.exercise-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8d7da;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.exercise-activity {
+    font-weight: bold;
+    color: rgb(255, 88, 116);
+    margin: 0;
+}
+
+.exercise-details {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.close-button-activ {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button-activ:hover,
+.close-button-activ:focus {
+    color: black;
+}
+
+.delete-button {
+    background-color: rgb(255, 88, 116);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.delete-button:hover{
+    background-color: rgb(194, 63, 85);
+}
+.modal h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.modal input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.modal button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color: #4cae4c;
+}
+
+.scroll-down{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.title-excer.ex-list{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}

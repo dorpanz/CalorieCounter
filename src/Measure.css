@@ -1,0 +1,33 @@
+.summary.measure{
+    margin-top: 20px;
+    height: 100px;
+}
+
+.title-measure{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.goal-weight{
+    text-align: center;
+}
+
+.weight-now{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.weight{
+    font-size: 28px;
+}
+
+.less-weight{
+    margin-right: 10px;
+}
+
+.more-weight{
+    margin-left: 10px;
+}
+

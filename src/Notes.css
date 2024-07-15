@@ -1,0 +1,65 @@
+.summary.notes{
+    margin-top: 20px;
+    background-color: rgb(255, 243, 188);
+}
+
+.inputUser{
+    width: 400px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.notesInfo{
+    display: flex;
+    justify-content: center;
+}
+
+.addnote {
+    margin-top: 20px;
+    background-color: rgb(255, 142, 161);
+    margin-left: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.addnote:hover{
+    background-color: rgb(253, 115, 138);
+}
+
+.note-all {
+    margin-top: 20px;
+    background-color: rgb(255, 228, 232);
+}
+
+.note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(222, 135, 177);
+}
+
+.erase{
+    background-color: pink;
+    border: 1px solid rgb(196, 147, 155);
+    border-radius: 20px;
+}
+
+.erase:hover{
+    background-color: rgb(253, 115, 138);
+}
+
+.clear-all-place{
+    display: flex;
+    justify-content: center;
+}
+
+.clear-all{
+    padding: 5px;
+    border-radius: 10px;
+    border:1px solid pink;
+    background-color: pink;
+}

@@ -126,7 +126,7 @@ const Recipe = () => {
                                         <div key={recipe.recipe.uri} className="recipe-card" onClick={() => openModal(recipe)}>
                                             <img src={recipe.recipe.image} alt={recipe.recipe.label} />
                                             <div className="recipe-details">
-                                                <h2 className='recipe-details-title'>{recipe.recipe.label}</h2>
+                                                <div className='recipe-details-title'>{recipe.recipe.label}</div>
                                                 <p>Calories: {Math.round(recipe.recipe.calories)}</p>
                                             </div>
                                         </div>
@@ -159,7 +159,6 @@ const Recipe = () => {
                                             <p>Calories: {Math.round(choiceOfTheDay.recipe.calories)}</p>
                                             <p><strong>Servings:</strong> {choiceOfTheDay.recipe.yield}</p>
                                             <p><strong>Dish Type:</strong> {choiceOfTheDay.recipe.dishType}</p>
-                                            
                                         </div>
                                     </div>
                                 )}

@@ -105,6 +105,10 @@
 .recipe-details-title {
     font-size: 16px;
     color: #333;
+    max-width: 100%; /* Make sure the title does not exceed the container width */
+    overflow: hidden; /* Hide the overflow text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow text */
+    white-space: nowrap;
 }
 
 .recipe-details p {
@@ -282,4 +286,119 @@
 .spinner-container{
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .recipe-card, .recipe-card-all {
+        width: 220px;
+        height: 350px;
+    }
+
+    .recipe-details, .recipe-details-all h2 {
+        font-size: 14px;
+    }
+
+    .recipe-details p, .recipe-details-all p {
+        font-size: 12px;
+    }
+
+    .recipe-container {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .recommendation-section{
+        height: 320px;
+    }
+    .recipe-card, .recipe-card-all {
+        width: 180px;
+        height: 320px;
+    }
+
+    .recipe-details, .recipe-details-all h2 {
+        font-size: 12px;
+    }
+
+    .recipe-details p, .recipe-details-all p {
+        font-size: 10px;
+    }
+
+    .recipe-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .recipe-card, .recipe-card-all {
+        width: 140px;
+        height: 280px;
+    }
+
+    .recipe-details, .recipe-details-all h2 {
+        font-size: 10px;
+    }
+
+    .recipe-details p, .recipe-details-all p {
+        font-size: 8px;
+    }
+
+    .recipe-container {
+        padding: 20px;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar-inp {
+        width: 90%;
+    }
+
+    .search-btn-recipe {
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .category-all,
+    .category-btns {
+        width: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .recipe-card, .recipe-card-all {
+        width: 200px;
+        height: 300px;
+    }
+    .recipe-details{
+        width: 140px;
+    }
+    .recipe-details-title{
+        max-width: 100%;
+    }
+
+    .recipe-details p, .recipe-details-all p {
+        font-size: 10px;
+    }
+
+    .recipe-container {
+        padding: 10px;
+    }
+
+    .search-bar-inp,
+    .search-btn-recipe {
+        width: 100%;
+    }
+
+    .choice-details {
+        width: 300px;
+        height: 500px;
+        
+    }
 }

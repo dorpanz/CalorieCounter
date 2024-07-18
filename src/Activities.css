@@ -249,16 +249,32 @@
     height: 30px;
 }
 
-/* Responsive Layout */
+
 @media (max-width: 1200px) {
+    .activity-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
     .steps, .activity-list {
-        width: 80%;
+        width: 700px;
+        padding: 20px;
     }
 }
 
 @media (max-width: 768px) {
+    .activity-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
     .steps, .activity-list {
         width: 100%;
+        padding: 20px;
     }
 
     .steps-input {

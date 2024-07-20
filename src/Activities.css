@@ -314,7 +314,9 @@
     }
 
     .title-excer {
-        flex-direction: column;
         align-items: flex-start;
+    }
+    .add-execr{
+        width:40px
     }
 }

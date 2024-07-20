@@ -17,7 +17,6 @@ function Activities() {
         return savedExercises ? JSON.parse(savedExercises) : [];
     });
     const [showModal, setShowModal] = useState(false);
-    // eslint-disable-next-line no-unused-vars
     const [totalTime, setTotalTime] = useState(() => {
         const savedTotalTime = localStorage.getItem('totalTime');
         return savedTotalTime ? JSON.parse(savedTotalTime) : 0;
@@ -35,6 +34,7 @@ function Activities() {
 
     useEffect(() => {
         localStorage.setItem('exercises', JSON.stringify(exercises));
+        setTotalTime(calculateTotalTime(exercises));
     }, [exercises]);
 
     const handleEditClick = () => {
@@ -113,6 +113,10 @@ function Activities() {
 
     const calculateTotalCaloriesBurned = (exercises) => {
         return exercises.reduce((total, exercise) => total + exercise.calories, 0);
+    };
+
+    const calculateTotalTime = (exercises) => {
+        return exercises.reduce((total, exercise) => total + exercise.time, 0);
     };
 
     return (

@@ -120,13 +120,13 @@ const Recipe = () => {
                         <div className="recommendations">
                             <h2>Recommendations</h2>
                             <h3>Low Calorie</h3>
-                            <div className="recommendation-section">
+                            <div className="recommendation-section ">
                                 <div className="recipe-list">
                                     {lowCalorieRecipes.map(recipe => (
                                         <div key={recipe.recipe.uri} className="recipe-card" onClick={() => openModal(recipe)}>
                                             <img src={recipe.recipe.image} alt={recipe.recipe.label} />
                                             <div className="recipe-details">
-                                                <div className='recipe-details-title'>{recipe.recipe.label}</div>
+                                                <h2 className='recipe-details-title'>{recipe.recipe.label}</h2>
                                                 <p>Calories: {Math.round(recipe.recipe.calories)}</p>
                                             </div>
                                         </div>
@@ -135,7 +135,7 @@ const Recipe = () => {
                                 <div className="scroll-indicator"></div> 
                             </div>
                             <h3>High Protein</h3>
-                            <div className="recommendation-section">
+                            <div className="recommendation-section ">
                                 <div className="recipe-list">
                                     {highProteinRecipes.map(recipe => (
                                         <div key={recipe.recipe.uri} className="recipe-card" onClick={() => openModal(recipe)}>
@@ -149,21 +149,19 @@ const Recipe = () => {
                                 </div>
                                 <div className="scroll-indicator"></div> 
                             </div>
-                            <h3>Choice of the Day</h3>
-                            <div className="recommendation-section choice">
-                                {choiceOfTheDay && (
+                            {choiceOfTheDay && (
+                                <div className="recommendation-section choice">
+                                    <h2>Choice of the Day</h2>
                                     <div className="choice-of-the-day" onClick={() => openModal(choiceOfTheDay)}>
-                                        <img src={choiceOfTheDay.recipe.image} alt={choiceOfTheDay.recipe.label} width="250px" height="250px"/>
-                                        <div className="recipe-details choice-details">
+                                        <img src={choiceOfTheDay.recipe.image} alt={choiceOfTheDay.recipe.label} />
+                                        <div className="choice-details">
                                             <h2>{choiceOfTheDay.recipe.label}</h2>
                                             <p>Calories: {Math.round(choiceOfTheDay.recipe.calories)}</p>
-                                            <p><strong>Servings:</strong> {choiceOfTheDay.recipe.yield}</p>
-                                            <p><strong>Dish Type:</strong> {choiceOfTheDay.recipe.dishType}</p>
                                         </div>
                                     </div>
-                                )}
+                                </div>
+                            )}
                             </div>
-                        </div>
                     )}
                     <div className="recipe-grid">
                         {recipes.slice(0,18).map(recipe => (

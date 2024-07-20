@@ -9,11 +9,8 @@ const ResetAll = () => {
     const handleReset = () => {
         const confirmed = window.confirm("Are you sure you want to reset all data?");
         if (confirmed) {
-            // Reset steps and burned calories
             setSteps(0);
             setBurnedCalories(0);
-
-            // Reset meal times (food lists)
             setMealTimes({
                 breakfast: [],
                 lunch: [],
@@ -21,14 +18,10 @@ const ResetAll = () => {
                 snack: [],
             });
 
-            // Reset exercises and total time
             localStorage.removeItem('exercises');
+            localStorage.removeItem('activity');
             localStorage.removeItem('totalTime');
-
-            // Reset notes
             localStorage.removeItem('userNotes');
-
-            // Clear water data
             localStorage.removeItem('animationStates');
         }
     };

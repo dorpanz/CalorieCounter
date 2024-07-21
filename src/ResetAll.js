@@ -23,6 +23,7 @@ const ResetAll = () => {
             localStorage.removeItem('totalTime');
             localStorage.removeItem('userNotes');
             localStorage.removeItem('animationStates');
+            window.location.reload()
         }
     };
 

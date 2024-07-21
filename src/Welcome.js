@@ -64,9 +64,9 @@ const Welcome = () => {
             carbPercentage = 0.425;
         }
 
-        const proteinIntake = (normCal * proteinPercentage) / 4; // 4 calories per gram of protein
-        const fatIntake = (normCal * fatPercentage) / 9; // 9 calories per gram of fat
-        const carbIntake = (normCal * carbPercentage) / 4; // 4 calories per gram of carbs
+        const proteinIntake = (normCal * proteinPercentage) / 4; 
+        const fatIntake = (normCal * fatPercentage) / 9; 
+        const carbIntake = (normCal * carbPercentage) / 4; 
 
         setCalorie(normCal.toFixed());
         setMacronutrients({

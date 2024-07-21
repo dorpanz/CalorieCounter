@@ -12,7 +12,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .progress-circle-breakfast::after {
     position: absolute;
     content: '';
@@ -22,9 +21,16 @@
     background: rgb(255, 228, 232);
 }
 
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .cal-remain-breakf{
     font-size: 18px;
-    z-index: 9;
+    z-index: 1;
 }  
 
 .breakfast {

@@ -4,7 +4,6 @@ import lunch from "./pics/lunch.png";
 import dinner from "./pics/dinner.webp";
 import snack from "./pics/snack.png";
 import { Link } from 'react-router-dom';
-
 const Food = ({ totalNutrients, mealCalories }) => {
     const calculateProgress = (eaten, total) => {
         return ((eaten / total) * 360).toFixed(2);

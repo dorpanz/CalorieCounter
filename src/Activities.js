@@ -4,6 +4,7 @@ import './Activities.css';
 import stepsImage from "./pics/steps.webp";
 import burn from "./pics/burn.png";
 import clock from "./pics/clock.png";
+import { ClipLoader } from 'react-spinners'; 
 
 function Activities() {
     const { steps, setSteps, setBurnedCalories } = useContext(CalorieContext);
@@ -22,7 +23,7 @@ function Activities() {
         return savedTotalTime ? JSON.parse(savedTotalTime) : 0;
     });
     const [errorMessage, setErrorMessage] = useState('');
-
+    const [isLoading, setIsLoading] = useState(false);
     useEffect(() => {
         localStorage.setItem('totalTime', JSON.stringify(totalTime));
     }, [totalTime]);
@@ -71,7 +72,8 @@ function Activities() {
             alert("Please enter a valid exercise and time (in minutes) greater than 0.");
             return;
         }
-
+        setIsLoading(true);
+        setErrorMessage('');
         try {
             const response = await fetch(`https://api.api-ninjas.com/v1/caloriesburned?activity=${activity}`, {
                 headers: { 'X-Api-Key': 'AQ/GnM1dbUgq1q/wVgUjqA==icORAnJrPFpqpLrY' }
@@ -201,7 +203,13 @@ function Activities() {
                             onChange={handleTimeChange}
                             required
                         />
-                        <button onClick={handleAddExercise}>Submit</button>
+                            {isLoading ? (
+                                <div className="loading-spinner">
+                                    <ClipLoader size={35} color={"#123abc"} loading={isLoading} />
+                                </div>
+                            ) : (
+                                <button onClick={handleAddExercise}>Add</button>
+                            )}
                     </div>
                 </div>
             )}

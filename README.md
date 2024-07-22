@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Calories Counter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+The Calories Counter Project is a web application designed to help users track their daily calorie intake and expenditure. With this app, users can log their meals, view nutritional information, and see a visual representation of their calorie consumption and remaining calories throughout the day. The project is built using React for the frontend and includes visual progress indicators for different meals.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Daily Calorie Tracking**: Log meals and track daily calorie intake and expenditure.
+- **Nutritional Information**: View detailed nutritional information for logged meals.
+- **Visual Progress Circles**: Display progress circles for each meal to visualize calorie consumption.
+- **Calorie Summary**: Summary of total calories consumed, remaining, and burned.
+- **Recipe Search**: Search for recipes based on a query and category.
+- **Recommendations**: Display recommendations for low-calorie and high-protein recipes.
+- **Choice of the Day**: Show a randomly selected recipe as the choice of the day.
+- **Responsive Design**: Fully responsive design that adapts to various screen sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To set up the project locally, follow these steps:
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- A code editor (VS Code recommended).
 
-### `npm run build`
+### Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    https://github.com/dorpanz/CalorieCounter.git
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Navigate to the project directory:**
 
-### `npm run eject`
+    ```bash
+    cd CalorieCounter
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install dependencies:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Start the development server:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm start
+    ```
 
-## Learn More
+    The application will run on `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## API Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project uses the Edamam Recipe API to fetch recipe data. You need to sign up on the [Edamam website](https://developer.edamam.com/) to get your API ID and API Key.
 
-### Code Splitting
+Update the `MY_ID` and `MY_TOKEN` constants in `Recipe.js` with your API credentials:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```javascript
+const MY_ID = "your_api_id";
+const MY_TOKEN = "your_api_key";
+```
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Logging Meals
 
-### Making a Progressive Web App
+1. Navigate to the desired meal (breakfast, lunch, dinner, or snack) using the provided buttons.
+2. Add the nutritional information for the meal.
+3. View the updated progress circles and summary.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Viewing Summary
 
-### Advanced Configuration
+The summary section provides an overview of the total calories eaten, remaining, and burned for the day. Macronutrient information (protein, fat, and carbs) is also displayed with progress bars.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Recipe Search
 
-### Deployment
+1. Enter a search query in the search bar.
+2. Click on the "Search" button to fetch and display recipes based on the query.
+3. Filter recipes by categories like Breakfast, Lunch, Dinner, and Snack.
+4. View recommendations for low-calorie and high-protein recipes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Viewing Recipe Details
 
-### `npm run build` fails to minify
+1. Click on a recipe card to open a modal with detailed information about the recipe, including ingredients.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Customization
+
+You can customize the application by modifying the CSS files and React components. For example, you can change the colors of the progress circles or adjust the layout of the summary section.
+
+## Contributing
+
+If you would like to contribute to the project, please fork the repository and submit a pull request with your changes. Make sure to follow the project's coding standards and include detailed commit messages.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For questions or suggestions, please open an issue on the repository or contact the project maintainer at destowq@gmail.com
+

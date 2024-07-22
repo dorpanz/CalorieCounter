@@ -235,19 +235,7 @@
 .choice {
     background-color: rgb(255, 255, 255);
 }
-.modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow-y: auto;
-}
+
 
 .modal-content {
     background-color: #fefefe;
@@ -404,10 +392,6 @@
         width: 80px;
     }
 
-    .modal {
-        width:800px
-    }
-
     .modal-details img {
         width: 200px;
     }
@@ -478,6 +462,6 @@
     }
     .ingr-list{
         font-size: 14px;
-        width: 300px;
+        width: 250px;
     }
 }

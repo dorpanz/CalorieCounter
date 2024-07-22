@@ -317,11 +317,13 @@
         align-items: flex-start;
     }
     .add-execr{
-        width:20px;
+        width:30px;
         height: 30px;
         text-align: center;
+        font-size: 14px;
     }
     .modal {
+        margin: auto;
         width:400px
     }
 }

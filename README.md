@@ -1,7 +1,7 @@
 # Calories Counter App
 
 ## Introduction
-
+https://calcountish.netlify.app/
 The Calories Counter Project is a web application designed to help users track their daily calorie intake and expenditure. With this app, users can log their meals, view nutritional information, and see a visual representation of their calorie consumption and remaining calories throughout the day. The project is built using React for the frontend and includes visual progress indicators for different meals.
 
 ## Features
